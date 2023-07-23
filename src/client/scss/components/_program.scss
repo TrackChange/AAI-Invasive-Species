@@ -1,0 +1,21 @@
+.program {
+  ul {
+    li {
+      border-bottom: 1px dashed #181818;
+      .program__item {
+        width: var(--width);
+        margin: 0 auto;
+        padding-block: 1.5rem;
+        &__date {
+          font-style: italic;
+        }
+        &__details {
+          margin: 0 auto;
+          display: flex;
+          gap: 1.5rem;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}

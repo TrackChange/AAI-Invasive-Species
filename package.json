@@ -1,0 +1,29 @@
+{
+  "name": "aai-invasive-species",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": " NODE_ENV=development concurrently npm:dev:* ",
+    "dev:eleventy": "eleventy --serve",
+    "dev:vite": "vite",
+    "build": "npm run build:vite && npm run build:eleventy",
+    "build:eleventy": "NODE_ENV=production eleventy",
+    "build:vite": "NODE_ENV=production vite build"
+  },
+  "keywords": [],
+  "author": "Alvin Ashiatey <alvinashiatey@gmail.com> (https://www.alvinashiatey.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@vitejs/plugin-legacy": "^4.1.1",
+    "concurrently": "^8.2.0",
+    "html-minifier": "^4.0.0",
+    "markdown-it": "^13.0.1",
+    "prettier": "^3.0.0",
+    "sass": "^1.64.1",
+    "terser": "^5.19.2",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.6"
+  }
+}

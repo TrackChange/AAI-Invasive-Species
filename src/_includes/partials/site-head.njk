@@ -1,0 +1,16 @@
+<header>
+    <div class="title">
+        <h1>
+            <a href="/">Invasive Species</a>
+        </h1>
+    </div>
+    <nav>
+        <h2>
+            <a href="/about" {% if page.url == '/about/'%} class="active__link"{% endif %} >About</a>, 
+            <a href="/program" {% if page.url == '/program/'%} class="active__link"{% endif %} >Program</a>, 
+            <a href="/the-cut" {% if page.url == '/the-cut/'%} class="active__link"{% endif %}>The Cut</a>, 
+            <a href="/technical" {% if page.url == '/technical/'%} class="active__link"{% endif %}>Technical</a>, 
+            <a href="/collaborating" {% if page.url == '/collaborating/'%} class="active__link"{% endif %}>Collaborating</a>
+        </h2>
+    </nav>
+</header>
