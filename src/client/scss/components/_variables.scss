@@ -1,3 +1,7 @@
 :root {
   --width: 70%;
+
+  @media (max-width: 68em) {
+    --width: 90%;
+  }
 }
