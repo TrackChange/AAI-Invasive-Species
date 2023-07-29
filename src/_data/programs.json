@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Outdoor Exhibition",
+    "date": "Friday, 16 Sept. – Sunday, 15 Oct., 2023",
+    "time": "Visit anytime",
+    "description": "Mixed Reality Public Art Installation at 18th Street Bridge",
+    "location": "465 North 18th Street"
+  },
+  {
+    "title": "Gallery Exhibition",
+    "date": "Friday, 16 Sept. – Saturday, 9 Dec., 2023",
+    "time": "Tuesdays, Thursdays, Saturdays, 2:00-6:00pm",
+    "description": "Artworks inspired by the Invasive Species project will be on display at the Asian Arts Initiative Storefront Gallery",
+    "location": "1219 Vine Street"
+  },
+  {
+    "title": "Demo",
+    "date": "Saturday, 16 September, 2023",
+    "time": "4:30-5:30pm",
+    "description": "Mixed Reality Public Art Demo at 18th Street Bridge",
+    "location": "465 North 18th Street"
+  },
+  {
+    "title": "Opening Celebration",
+    "date": "Saturday, 16 September, 2023",
+    "time": "6:00-8:00pm",
+    "description": "Opening Celebration of Gallery Exhibition at Asian Arts Initiative",
+    "location": "1219 Vine Street"
+  },
+  {
+    "title": "Community Day",
+    "date": "Saturday, 7 Oct., 2023",
+    "time": "2:00-6:30pm",
+    "description": "Music, Poetry, Food, Bounce House, Crafts!",
+    "location": "Matthias Baldwin Park\n423 N 19th St"
+  },
+  {
+    "title": "Performance",
+    "date": "Saturday & Sunday, 7 & 8 Oct., 2023",
+    "time": "7:00-9:00pm",
+    "description": "A live and interactive performance in the Cut. An Urban Cypher Performance of Sound, Augmented Reality, and Projection Mapping viewed from 18th Street Bridge and Community College of Philadelphia Main Garage (Enter from 18th Street)",
+    "location": "434 North 18th Street"
+  }
+]

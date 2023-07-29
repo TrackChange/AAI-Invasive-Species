@@ -3,81 +3,29 @@
         <div id="app">
                 <div class="program">
                         <ul>
-                                <li>
-                                        <div class="program__item">
-                                                <div class="program__item__date">
-                                                        <p>Saturday, 5 Sept. 2023</p>
-                                                </div>
-                                                <div class="program__item__details">
-                                                        <div class="program__item__title">
-                                                                <h3>Opening Ceremony</h3>
+                                {% for item in programs %}
+                                        <li>
+                                                <div class="program__item">
+                                                        <div class="program__item__date">
+                                                                <p>{{ item.date }}</p>
                                                         </div>
-                                                        <div class="program__item__time">
-                                                                <p>10:00 - 11:00</p>
-                                                        </div>
-                                                        <div class="program__item__location">
-                                                                <p>Room 1</p>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </li>
+                                                        <div class="program__item__details">
+                                                                <div class="program__item__title">
+                                                                        <h3>{{ item.title }}</h3>
+                                                                </div>
+                                                                <div class="program__item__time">
+                                                                        <p>{{ item.time }}</p>
+                                                                </div>
+                                                                <div class="program__item__location">
+                                                                        <p>{{ item.description }}
+                                                                                <br>
+                                                                                <span>{{ item.location}}</span></p>
 
-                                <li>
-                                        <div class="program__item">
-                                                <div class="program__item__date">
-                                                        <p>Saturday, 5 Sept. 2023</p>
-                                                </div>
-                                                <div class="program__item__details">
-                                                        <div class="program__item__title">
-                                                                <h3>Opening Ceremony</h3>
-                                                        </div>
-                                                        <div class="program__item__time">
-                                                                <p>10:00 - 11:00</p>
-                                                        </div>
-                                                        <div class="program__item__location">
-                                                                <p>Room 1</p>
+                                                                </div>
                                                         </div>
                                                 </div>
-                                        </div>
-                                </li>
-
-                                <li>
-                                        <div class="program__item">
-                                                <div class="program__item__date">
-                                                        <p>Saturday, 5 Sept. 2023</p>
-                                                </div>
-                                                <div class="program__item__details">
-                                                        <div class="program__item__title">
-                                                                <h3>Opening Ceremony</h3>
-                                                        </div>
-                                                        <div class="program__item__time">
-                                                                <p>10:00 - 11:00</p>
-                                                        </div>
-                                                        <div class="program__item__location">
-                                                                <p>Room 1</p>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </li>
-
-                                <li>
-                                        <div class="program__item">
-                                                <div class="program__item__date">
-                                                        <p>Saturday, 5 Sept. 2023</p>
-                                                </div>
-                                                <div class="program__item__details">
-                                                        <div class="program__item__title">
-                                                                <h3>Opening Ceremony</h3>
-                                                        </div>
-                                                        <div class="program__item__time">
-                                                                <p>10:00 - 11:00</p>
-                                                        </div>
-                                                        <div class="program__item__location">
-                                                                <p>Room 1</p>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </li>
+                                        </li>
+                                {% endfor %}
                         </ul>
                 </div>
         </div>
