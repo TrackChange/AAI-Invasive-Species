@@ -41,6 +41,11 @@
             aspect-ratio: 2/1;
           }
         }
+
+        a {
+          font-size: var(--fs-p);
+          font-weight: bold;
+        }
       }
     }
   }

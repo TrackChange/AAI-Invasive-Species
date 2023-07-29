@@ -6,7 +6,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-size: 1.2rem;
+  font-size: var(--fs-h);
   font-weight: normal;
 }
 
@@ -15,7 +15,7 @@ input,
 select,
 caption,
 textarea {
-  font-size: 1.1rem;
+  font-size: var(--fs-p);
   font-weight: normal;
   overflow-wrap: break-word;
 }
