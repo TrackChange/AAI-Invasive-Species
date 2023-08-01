@@ -3,10 +3,26 @@
         <div id="app">
                 <div class="the-cut">
                         <article>
-                                <p>In its recent histories, the Cut was first proposed as a canal waterway connecting the Delaware waterfront and the Schuylkill. However, the plan never came to fruition and instead was turned into a railway in the 1930s that stretched from Broad Street to 22nd Street. The last train down the Callowhill Cut was in 1992 and subsequently sold to SEPTA. Today, having been relatively untouched, the Cut is teeming with biodiversity, thriving pollinators, and vibrant growth of plants, contributing to stormwater management in the midst of an unban concrete environment. </p>
-                                <p>In this project, the Cut is a platform from which to explore the point of views of the plants, insects, birds, animals, and each other, and explore how we are part of the social-ecological system. We invite you to the digital mixed reality experience to take a closer look and listen to the environment, as well as community stories from various perspectives including urban agriculture, urban design and planning, environmental science, civic institutions, students, and nearby residents. </p>
-                                <p> (For more information on its history, read <a href="https://www.baldwinparkphilly.org/copy-of-the-callowhill-cut">this</a> on the Friends of Matthias Baldwin Park website, and <a href="https://www.therailpark.org/history/">this</a> on the Friends of the Rail Park website.)</p>
+                                {% for p in cut.content %}
+                                        {{ p  | safe}}
+                                {% endfor %}
                         </article>
+
+                        <!-- Slider main container -->
+                        <div class="images">
+                                <!-- Additional required wrapper -->
+                                <div class="images-wrapper">
+                                        <!-- Slides -->
+                                        {% for img in cut.images %}
+                                                <div class="slide">
+                                                        <img src="{{ img.src }}" alt="">
+                                                        <caption>
+                                                                {{ img.credit }}
+                                                        </caption>
+                                                </div>
+                                        {% endfor %}
+                                </div>
+                        </div>
                 </div>
         </div>
 {% endblock %}
