@@ -19,17 +19,20 @@
       scroll-snap-points-x: repeat(100%);
       overscroll-behavior-inline: contain;
 
-      // keep scroll end from bouncing back
+      @media (max-width: 40em) {
+        flex-direction: column;
+      }
 
       .slide {
         scroll-snap-align: start;
         min-width: fit-content;
         min-height: 5rem;
-        height: 50dvh;
+        height: 52dvh;
         width: fit-content;
         padding: 0 1rem;
 
         img {
+          inline-size: 100%;
           height: 90%;
         }
 

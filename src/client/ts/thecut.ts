@@ -11,7 +11,7 @@ function initSwiper() {
 }
 
 function setupCut() {
-  initSwiper();
+  //   initSwiper();
 }
 
 export { setupCut };

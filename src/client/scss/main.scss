@@ -5,6 +5,7 @@
 @use "./components/about";
 @use "./components/program";
 @use "./components/thecut";
+@use "./components/collaborating";
 
 body {
   scroll-behavior: smooth;
@@ -35,4 +36,5 @@ body {
 
 .active__link {
   font-weight: bold;
+  -webkit-text-stroke: 0.3px #181818;
 }
