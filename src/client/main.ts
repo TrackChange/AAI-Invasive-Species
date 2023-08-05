@@ -1,9 +1,9 @@
 import "./scss/main.scss";
 import { setHeaderHeightCss, mobileMenu } from "./ts/header";
-import { setupCut } from "./ts/thecut";
+import { setupHome } from "./ts/home";
 
 window.onload = () => {
   setHeaderHeightCss();
   mobileMenu();
-  setupCut();
+  setupHome();
 };

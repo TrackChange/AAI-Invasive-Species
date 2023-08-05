@@ -2,9 +2,11 @@
 @use "./components/reset";
 @use "./components/typography";
 @use "./components/header";
+@use "./components/home";
 @use "./components/about";
 @use "./components/program";
 @use "./components/thecut";
+@use "./components/technical";
 @use "./components/collaborating";
 
 body {

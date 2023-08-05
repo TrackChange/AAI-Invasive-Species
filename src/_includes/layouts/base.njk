@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% include "partials/meta-info.njk" %}
         <link rel="preload" as="font" {% if page.url == '/' %}  href="assets/font/FoundersGroteskVF.woff" {% else %} href="./../assets/font/FoundersGroteskVF.woff" {% endif %} type="font/woff" crossorigin="anonymous">
+        <link rel="preload" as="font" {% if page.url == '/' %}  href="assets/font/GayaRegular-Web.woff" {% else %} href="./../assets/font/GayaRegular-Web.woff" {% endif %} type="font/woff" crossorigin="anonymous">
         {% block scriptLink %}{% endblock %}
         {% if build.env == "production" %}
             {# Add any CSS from the main script #}
@@ -18,9 +19,17 @@
                 @font-face {
                     font-family: "Founders Grotesk VF";
                     src: url("/assets/font/FoundersGroteskVF.woff") format("woff");
+                }
+                @font-face {
+                    font-family: "Gaya";
+                    src: url("/assets/font/GayaRegular-Web.woff") format("woff");
                 } {% else %} @font-face {
                     font-family: "Founders Grotesk VF";
                     src: url("./../assets/font/FoundersGroteskVF.woff") format("woff");
+                }
+                @font-face {
+                    font-family: "Gaya";
+                    src: url("./../assets/font/GayaRegular-Web.woff") format("woff");
                 }
             {% endif %}
             {{cssContent | safe}}

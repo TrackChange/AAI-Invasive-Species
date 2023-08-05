@@ -6,6 +6,11 @@
         width: var(--width);
         margin: 0 auto;
         padding-block: 1.5rem;
+        &__title {
+          span {
+            font-size: 0.8rem;
+          }
+        }
         &__date {
           font-style: italic;
         }

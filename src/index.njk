@@ -1,4 +1,13 @@
 {% extends "layouts/base.njk" %}
 {% block content %}
-        <div id="app"></div>
+        <div id="app">
+                <div class="home">
+                        <div class="video">
+                                <div class="overlay"></div>
+                                <video id="video" autoplay muted loop>
+                                        <source src="/assets/images/vid/home_720.mp4" type="video/mp4">
+                                </video>
+                        </div>
+                </div>
+        </div>
 {% endblock %}

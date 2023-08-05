@@ -52,6 +52,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "./src/font": "/assets/font" });
   eleventyConfig.addPassthroughCopy({ "./src/images": "/assets/images" });
+  eleventyConfig.addPassthroughCopy({ "./src/audio": "/assets/audio" });
 
   return {
     templateFormats: ["md", "njk", "html"],

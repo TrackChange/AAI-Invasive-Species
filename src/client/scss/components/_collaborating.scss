@@ -1,10 +1,14 @@
 .wrap {
   width: var(--width);
   margin: 0 auto;
-  padding-block-end: 5rem;
 }
 
-.interviewees {
+.interviewees,
+.supporters,
+.collab,
+.funders,
+.dinners {
+  padding-block-end: 5rem;
   .title {
     border-bottom: 1px dashed #181818;
     padding-block: 0.7rem;
@@ -18,5 +22,36 @@
 
   .content {
     padding-block: 1.5rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.organizations {
+  display: flex;
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  margin-block: 1.5rem;
+
+  @media (max-width: 40rem) {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .image {
+    width: 15vw;
+    @media (max-width: 40rem) {
+      width: 60%;
+      align-self: center;
+    }
+    img {
+      mix-blend-mode: multiply;
+      margin: 0;
+    }
   }
 }
