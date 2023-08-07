@@ -18,10 +18,17 @@ function overlayEffect() {
   const videoContainer = document.querySelector(".video") as HTMLElement;
   if (!videoContainer) return;
 
+  if (window.innerWidth < 768) {
+    overlay.style.height = "100%";
+    return;
+  }
+
   window.addEventListener("mousemove", (e) => {
     const y = mapRange(e.clientY, 0, window.innerHeight / 2, 0, 100);
     overlay.style.height = `${y}%`;
   });
+
+  // if mobile device
 }
 
 function mapRange(

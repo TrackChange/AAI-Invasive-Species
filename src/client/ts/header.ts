@@ -15,6 +15,11 @@ function mobileMenu() {
   mobileNavButton.addEventListener("click", (e) => {
     e.preventDefault();
     mobileNav.toggleAttribute("data-active");
+    if (mobileNav.hasAttribute("data-active")) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
   });
 }
 

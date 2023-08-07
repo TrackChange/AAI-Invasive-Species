@@ -13,7 +13,7 @@
                                 <!-- Additional required wrapper -->
                                 <div class="images-wrapper">
                                         <!-- Slides -->
-                                        {% for img in cut.images %}
+                                        {% for img in cut.images | reverse %}
                                                 <div class="slide">
                                                         <img src="{{ img.src }}" alt="">
                                                         <caption>

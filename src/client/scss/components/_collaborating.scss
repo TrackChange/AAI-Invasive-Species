@@ -55,3 +55,55 @@
     }
   }
 }
+
+.dinners {
+  .images {
+    width: 100%;
+    margin-block-start: 2rem;
+
+    &-wrapper {
+      width: inherit;
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-padding-inline: 1rem;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-points-x: repeat(100%);
+      overscroll-behavior-inline: contain;
+
+      @media (max-width: 40em) {
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+
+      .slide {
+        scroll-snap-align: start;
+        min-width: fit-content;
+        min-height: 5rem;
+        height: 52dvh;
+        width: fit-content;
+        padding: 0 1rem;
+
+        @media (max-width: 40em) {
+          height: fit-content;
+        }
+
+        img {
+          height: 90%;
+
+          @media (max-width: 40em) {
+            height: initial;
+          }
+        }
+
+        caption {
+          font-size: 0.2rem;
+          text-align: center;
+          margin-block-start: 0.5rem;
+        }
+      }
+    }
+  }
+}

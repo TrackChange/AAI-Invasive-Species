@@ -20,5 +20,35 @@
       height: 100%;
       object-fit: cover;
     }
+
+    .detail {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      display: grid;
+      place-content: end;
+      padding: 3rem 1rem;
+      mix-blend-mode: difference;
+      color: whitesmoke;
+
+      @media (max-width: 68em) {
+        padding: 1rem;
+      }
+
+      p {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        text-align: center;
+        span {
+          font-size: 3rem;
+          font-family: "Gaya", sans-serif;
+        }
+
+        @media (max-width: 68em) {
+          width: 100%;
+        }
+      }
+    }
   }
 }

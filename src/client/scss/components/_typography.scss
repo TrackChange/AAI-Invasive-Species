@@ -30,7 +30,8 @@ a:active {
 }
 
 p + p {
-  text-indent: 1.5rem;
+  // text-indent: 1.5rem;
+  margin-block-start: 1.2rem;
 }
 
 ul {
@@ -39,6 +40,6 @@ ul {
   padding: 0;
 }
 
-b {
-  -webkit-text-stroke: 0.3px #181818;
-}
+// b {
+//   -webkit-text-stroke: 0.1px #181818;
+// }
