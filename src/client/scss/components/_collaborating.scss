@@ -59,13 +59,23 @@
 }
 
 .dinners {
-    .spring {
-      @media (max-width: 40em) {
+  .spring {
+    @media (max-width: 40em) {
       margin-top: 4rem;
+    }
+  }
+
+  .dinner {
+    &:last-child {
+      @media (max-width: 40rem) {
+        margin-block-start: 5rem;
       }
     }
 
-
+    h2 {
+      font-weight: bold;
+    }
+  }
   .images {
     width: 100%;
     margin-block-start: 2rem;
@@ -101,9 +111,16 @@
 
         img {
           height: 90%;
+          border-radius: 50%;
+          transition: border-radius 0.3s ease-in-out;
+
+          &:hover {
+            border-radius: 0;
+          }
 
           @media (max-width: 40em) {
             height: initial;
+            border-radius: 0;
           }
         }
 
