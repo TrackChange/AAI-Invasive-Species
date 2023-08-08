@@ -15,8 +15,10 @@
     h2 {
       width: var(--width);
       margin: 0 auto;
-      font-weight: bold;
-      -webkit-text-stroke: 0.3px #181818;
+      font-weight: 400;
+      font-family: "Founders Grotesk Medium", Arial, sans-serif;
+
+      // -webkit-text-stroke: 0.3px #181818;
     }
   }
 
@@ -57,6 +59,13 @@
 }
 
 .dinners {
+    .spring {
+      @media (max-width: 40em) {
+      margin-top: 4rem;
+      }
+    }
+
+
   .images {
     width: 100%;
     margin-block-start: 2rem;
@@ -84,7 +93,7 @@
         min-height: 5rem;
         height: 52dvh;
         width: fit-content;
-        padding: 0 1rem;
+        margin: 0 1rem;
 
         @media (max-width: 40em) {
           height: fit-content;

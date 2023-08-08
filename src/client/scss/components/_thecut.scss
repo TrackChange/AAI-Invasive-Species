@@ -33,10 +33,13 @@
         min-height: 5rem;
         height: 52dvh;
         width: fit-content;
-        padding: 0 1rem;
+        margin: 0 1rem;
+        font-size: 1rem;
+        letter-spacing: 0.02em;
 
         img {
           height: 90%;
+          margin-bottom: .5rem;
         }
 
         caption {

@@ -13,7 +13,7 @@
     }
 
     .audios {
-      margin-block: 2rem;
+      margin-block: 4rem;
       display: flex;
       justify-content: space-around;
       gap: 2rem;
@@ -27,7 +27,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: min-content;
+        // width: min-content;
 
         @media (max-width: 40em) {
           width: 100%;
@@ -38,9 +38,10 @@
         }
 
         .caption {
-          padding-inline: 1rem;
+          // padding-inline: 1rem;
 
           P {
+            margin-top: 1rem;
             font-size: 1rem;
             line-height: 120%;
           }
