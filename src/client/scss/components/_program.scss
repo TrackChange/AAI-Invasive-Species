@@ -1,5 +1,10 @@
 .program {
   ul {
+    li:first-child {  
+      .program__item {
+        padding-block: 0 1.5rem;
+      }      
+    }
     li {
       border-bottom: 1px dashed #181818;
       .program__item {
@@ -7,18 +12,19 @@
         margin: 0 auto;
         padding-block: 1.5rem;
         &__title {
+          // text-decoration: underline;
           span {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
           }
         }
         &__date {
-          font-style: italic;
+          font-family: "Founders Grotesk", Arial, Sans-serif;
         }
         &__details {
-          margin: 0 auto;
+          margin: 1em auto 0 auto;
           display: grid;
           grid-template-columns: 1fr 1fr 2fr;
-          grid-gap: 1rem;
+          grid-gap: 2rem;
 
           @media (max-width: 40rem) {
             grid-template-columns: 1fr;

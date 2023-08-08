@@ -11,7 +11,7 @@
 
 body {
   scroll-behavior: smooth;
-  font-family: "Founders Grotesk VF", Arial, sans-serif;
+  font-family: "Founders Grotesk Regular", Arial, sans-serif;
   font-weight: normal;
   color: var(--primary-color);
   max-width: 100vw;
@@ -26,6 +26,5 @@ body {
 }
 
 .active__link {
-  font-weight: bold;
-  -webkit-text-stroke: 0.3px #181818;
+  font-family: "Founders Grotesk Medium", Arial, sans-serif;
 }

@@ -19,7 +19,8 @@ textarea {
   font-size: var(--fs-p);
   font-weight: normal;
   overflow-wrap: break-word;
-  line-height: 120%;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 a,
@@ -40,6 +41,11 @@ ul {
   padding: 0;
 }
 
-// b {
-//   -webkit-text-stroke: 0.1px #181818;
-// }
+b {
+  font-family: "Founders Grotesk Medium", Arial, sans-serif;
+  font-weight: normal;
+  // -webkit-text-stroke: 0.1px #181818;
+}
+h3 {
+  font-size: var(--fs-p);
+}

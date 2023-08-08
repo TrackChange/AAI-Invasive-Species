@@ -31,13 +31,17 @@
       mix-blend-mode: difference;
       color: whitesmoke;
 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
       @media (max-width: 68em) {
         padding: 1rem;
       }
 
       p {
         width: 50%;
-        margin: 0 auto;
         font-size: 1.8rem;
         text-align: center;
         span {

@@ -11,8 +11,9 @@
     h2 {
       width: var(--width);
       margin: 0 auto;
-      font-weight: bold;
-      -webkit-text-stroke: 0.3px #181818;
+      font-weight: 400;
+      font-family: "Founders Grotesk Medium", Arial, sans-serif;
+
     }
   }
 
@@ -55,14 +56,17 @@
 
         a {
           font-size: var(--fs-p);
-          font-weight: bold;
-          text-decoration: underline;
+          font-weight: 400;
+          font-family: "Founders Grotesk Medium", Arial, sans-serif;
+          display: inline-block;
+          margin-top: .5em;    
+          // text-decoration: underline;
         }
       }
     }
   }
 }
-
+h2 {letter-spacing: 0.02em;}
 .aai {
   padding-block-start: 5rem;
   .title {
@@ -71,8 +75,9 @@
     h2 {
       width: var(--width);
       margin: 0 auto;
-      font-weight: bold;
-      -webkit-text-stroke: 0.3px #181818;
+      font-weight: 400;
+      font-family: "Founders Grotesk Medium", Arial, sans-serif;
+
     }
   }
   .content {
