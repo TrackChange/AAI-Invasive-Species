@@ -6,7 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% include "partials/meta-info.njk" %}
-        <link rel="preload" as="font" {% if page.url == '/' %}  href="assets/font/FoundersGroteskVF.woff" {% else %} href="./../assets/font/FoundersGroteskVF.woff" {% endif %} type="font/woff" crossorigin="anonymous">
+        <link rel="preload" as="font" {% if page.url == '/' %}  href="assets/font/Founders Grotesk - Regular.woff" {% else %} href="./../assets/font/Founders Grotesk - Regular.woff" {% endif %} type="font/woff" crossorigin="anonymous">
+        <link rel="preload" as="font" {% if page.url == '/' %}  href="assets/font/Founders Grotesk - Medium.woff" {% else %} href="./../assets/font/Founders Grotesk - Medium.woff" {% endif %} type="font/woff" crossorigin="anonymous">
         <link rel="preload" as="font" {% if page.url == '/' %}  href="assets/font/GayaRegular-Web.woff" {% else %} href="./../assets/font/GayaRegular-Web.woff" {% endif %} type="font/woff" crossorigin="anonymous">
         {% block scriptLink %}{% endblock %}
         {% if build.env == "production" %}
@@ -17,15 +18,23 @@
         <style>
             {% if page.url == '/' %}
                 @font-face {
-                    font-family: "Founders Grotesk VF";
-                    src: url("/assets/font/FoundersGroteskVF.woff") format("woff");
+                    font-family: "Founders Grotesk";
+                    src: url("/assets/font/Founders Grotesk - Regular.woff") format("woff");
+                }
+                @font-face {
+                    font-family: "Founders Grotesk Medium";
+                    src: url("/assets/font/Founders Grotesk - Medium.woff") format("woff");
                 }
                 @font-face {
                     font-family: "Gaya";
                     src: url("/assets/font/GayaRegular-Web.woff") format("woff");
                 } {% else %} @font-face {
-                    font-family: "Founders Grotesk VF";
-                    src: url("./../assets/font/FoundersGroteskVF.woff") format("woff");
+                    font-family: "Founders Grotesk";
+                    src: url("./../assets/font/Founders Grotesk - Regular.woff") format("woff");
+                }
+                @font-face {
+                    font-family: "Founders Grotesk Medium";
+                    src: url("./../assets/font/Founders Grotesk - Medium.woff") format("woff");
                 }
                 @font-face {
                     font-family: "Gaya";

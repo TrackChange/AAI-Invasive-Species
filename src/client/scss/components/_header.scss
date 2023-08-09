@@ -6,7 +6,7 @@ header {
   height: fit-content;
   z-index: 100;
   padding-block: 1rem 1.5rem;
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background: var(--clr-primary);
   background: linear-gradient(
     180deg,
@@ -21,7 +21,7 @@ header {
     border-bottom: 1px dashed #181818;
     padding-block-end: 1rem;
     h1 {
-      font-family: 'Gaya','Times New Roman', serif;
+      font-family: "Gaya", "Times New Roman", serif;
       font-size: 2.5rem;
       letter-spacing: -0.01em;
       margin: 0;
@@ -43,7 +43,6 @@ header {
       @media (max-width: 68em) {
         &#desktop-nav {
           display: none;
-
         }
         &#mobile-nav {
           display: block;
@@ -62,7 +61,7 @@ header {
       width: 100%;
       font-size: 1.2rem;
       font-weight: normal;
-      height: calc(100vh - var(--title-height));
+      height: calc(100vh - calc(var(--title-height) + 1rem));
       background-color: var(--clr-primary);
       backdrop-filter: blur(500px);
       @media (max-width: 68em) {
@@ -71,7 +70,7 @@ header {
         }
 
         li {
-          height: calc(80% / 5);
+          height: calc(70% / 5);
           border-bottom: 1px dashed #181818;
           display: grid;
           place-items: center;
@@ -80,6 +79,7 @@ header {
 
           &:hover {
             font-family: "Founders Grotesk Medium", Arial, sans-serif;
+            font-weight: bold;
           }
         }
       }

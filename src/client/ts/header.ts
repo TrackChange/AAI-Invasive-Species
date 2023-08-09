@@ -2,7 +2,7 @@ function setHeaderHeightCss() {
   const header = document.querySelector("header") as HTMLElement;
   const headerHeight = header.offsetHeight;
   const main = document.querySelector("main") as HTMLElement;
-  main.style.paddingBlockStart = headerHeight + "px";
+  main.style.paddingBlockStart = headerHeight + 50 + "px";
 
   const title = document.querySelector(".title") as HTMLElement;
   document.body.style.setProperty("--title-height", title.offsetHeight + "px");
