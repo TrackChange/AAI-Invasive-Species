@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  eleventy:
+    specifier: ^1.0.6
+    version: 1.0.6
   swiper:
     specifier: ^10.1.0
     version: 10.1.0
@@ -2068,6 +2071,11 @@ packages:
   /electron-to-chromium@1.4.468:
     resolution: {integrity: sha512-6M1qyhaJOt7rQtNti1lBA0GwclPH+oKCmsra/hkcWs5INLxfXXD/dtdnaKUYQu/pjOBP/8Osoe4mAcNvvzoFag==}
     dev: true
+
+  /eleventy@1.0.6:
+    resolution: {integrity: sha512-IzaPK0P5eF/jm5qdOzrzq2947FFRKpZwHT8AR1WpGI4tTpkLnzwQF02p9m0o5XQQ4dypBExp69fUHViEiHUWpQ==}
+    requiresBuild: true
+    dev: false
 
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}

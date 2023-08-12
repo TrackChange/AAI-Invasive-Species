@@ -8,11 +8,8 @@
                                 {% endfor %}
                         </article>
 
-                        <!-- Slider main container -->
                         <div class="images">
-                                <!-- Additional required wrapper -->
                                 <div class="images-wrapper">
-                                        <!-- Slides -->
                                         {% for img in cut.images | reverse %}
                                                 <div class="slide">
                                                         <img src="{{ img.src }}" alt="">
@@ -22,6 +19,8 @@
                                                 </div>
                                         {% endfor %}
                                 </div>
+                                <div class="slide-left"></div>
+                                <div class="slide-right"></div>
                         </div>
                 </div>
         </div>
