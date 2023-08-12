@@ -67,9 +67,19 @@
 
   .slide-left {
     left: 0;
+
+    &:hover {
+      cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35' height='29' viewBox='0 0 35 29' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.20027 12.5912L17.0959 3.6956L14.3368 0.936523L0.773354 14.5L14.2928 28.0194L17.0609 25.2514L8.30876 16.4993L34.1714 16.4573L34.1777 12.549L8.20027 12.5912Z' fill='white'/%3E%3C/svg%3E"),
+        auto;
+    }
   }
 
   .slide-right {
     right: 0;
+
+    &:hover {
+      cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35' height='29' viewBox='0 0 35 29' fill='white'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M26.7509 12.5912L17.8553 3.6956L20.6144 0.936523L34.1778 14.5L20.6584 28.0194L17.8903 25.2514L26.6424 16.4993L0.779785 16.4573L0.773438 12.549L26.7509 12.5912Z'/%3E%3C/svg%3E"),
+        auto;
+    }
   }
 }
