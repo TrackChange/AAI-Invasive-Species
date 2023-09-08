@@ -1,0 +1,52 @@
+.map {
+    width            : var(--width);
+    margin           : 0 auto;
+    padding-block-end: 5rem;
+    padding-block-start: 5rem;
+
+    p {
+        cursor     : pointer;
+    }
+
+    .map-wrapper {
+        width          : 100vw;
+        height         : 100vh;
+        display        : none;
+        backdrop-filter: blur(30px);
+        z-index        : 100;
+
+        position: fixed;
+        top     : 0;
+        left    : 0;
+
+        img {
+            position : absolute;
+            top      : 50%;
+            left     : 50%;
+            transform: translate(-50%, -50%);
+
+
+            margin   : auto;
+            max-width: 1200px;
+            width    : 80vw;
+
+
+            @media screen and (max-width: 800px) {
+                width: 90vw;
+            }
+        }
+
+        .map-close {
+            position: absolute;
+            cursor  : pointer;
+            top     : 2rem;
+            right   : 2rem;
+
+            @media screen and (max-width: 800px) {
+                top  : 5vw;
+                right: 5vw;
+            }
+
+        }
+    }
+}
