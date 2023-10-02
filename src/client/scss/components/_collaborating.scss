@@ -31,7 +31,8 @@
   }
 }
 
-.organizations {
+.organizations,
+.partners {
   display: flex;
   gap: 1rem;
   background-color: white;
@@ -54,6 +55,10 @@
     img {
       mix-blend-mode: multiply;
       margin: 0;
+    }
+
+    &.ss {
+      width: 8vw;
     }
   }
 }
